@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Palatino Linotype', serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
@@ -214,7 +214,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #000000 url("images/mosaic.png") center;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -289,7 +289,7 @@ input, select, textarea {
 
 	#bg {
 		background-size: 2250px auto;
-		width: 6750px;
+		width: 6750px auto;
 	}
 
 /* Overlay */
@@ -551,7 +551,7 @@ input, select, textarea {
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 1;
 		}
 
 		#header nav {
