@@ -132,6 +132,12 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-weight: 400;
 			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
@@ -289,7 +295,7 @@ input, select, textarea {
 
 	#bg {
 		background-size: 2250px auto;
-		width: 6750px auto;
+		width: 6750px;
 	}
 
 /* Overlay */
