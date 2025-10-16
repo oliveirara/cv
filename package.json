@@ -1,0 +1,24 @@
+{
+  "name": "renan-cv-portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website with dark theme and liquid glass effect",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "cv",
+    "resume",
+    "dark-theme",
+    "glassmorphism"
+  ],
+  "author": "Renan Alves de Oliveira",
+  "license": "MIT"
+}
+
