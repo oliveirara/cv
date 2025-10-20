@@ -41,7 +41,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const offsetTop = target.offsetTop - 70;
             window.scrollTo({
                 top: offsetTop,
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         }
     });
@@ -52,10 +52,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===========================
 const textArray = [
     'AI Specialist',
-    'Data Scientist',
-    'Astrophysicist',
+    'AI Architect',
     'Machine Learning Engineer',
-    'HPC Cluster Admin'
+    'MLOps Engineer',
+    'LLM Engineer',
+    'Computer Vision Engineer',
+    'Data Analyst',
+    'Data Engineer',
+    'Data Scientist',
+    'Research Scientist',
+    'Physicist',
+    'Astrophysicist',
 ];
 const typingSpeed = 100;
 const erasingSpeed = 50;
@@ -96,7 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===========================
 // Scroll Reveal Animation
 // ===========================
-const revealElements = document.querySelectorAll('.glass-card, .timeline-item, .skill-category, .education-card, .publication-item');
+const revealElements = document.querySelectorAll(
+    '.glass-card, .timeline-item, .skill-category, .education-card, .publication-item'
+);
 
 function reveal() {
     revealElements.forEach(element => {
@@ -131,7 +140,9 @@ function scrollActive() {
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav-menu a[href*=' + sectionId + ']')?.classList.add('active');
         } else {
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']')?.classList.remove('active');
+            document
+                .querySelector('.nav-menu a[href*=' + sectionId + ']')
+                ?.classList.remove('active');
         }
     });
 }
@@ -145,9 +156,9 @@ const particles = document.querySelectorAll('.particle');
 
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    
+
     particles.forEach((particle, index) => {
-        const speed = 0.5 + (index * 0.1);
+        const speed = 0.5 + index * 0.1;
         particle.style.transform = `translateY(${scrolled * speed}px)`;
     });
 });
@@ -162,7 +173,7 @@ window.addEventListener('scroll', () => {
 // ===========================
 function createFloatingParticles() {
     const bgAnimation = document.querySelector('.bg-animation');
-    
+
     // Add more subtle particles
     for (let i = 0; i < 10; i++) {
         const particle = document.createElement('div');
@@ -172,7 +183,7 @@ function createFloatingParticles() {
             'rgba(255, 255, 255, 0.7)',
             'rgba(0, 255, 136, 0.8)',
             'rgba(255, 0, 128, 0.8)',
-            'rgba(178, 102, 255, 0.8)'
+            'rgba(178, 102, 255, 0.8)',
         ];
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
         particle.style.cssText = `
@@ -211,9 +222,9 @@ createFloatingParticles();
 let ticking = false;
 
 function optimizedScroll(callback) {
-    return function() {
+    return function () {
         if (!ticking) {
-            window.requestAnimationFrame(function() {
+            window.requestAnimationFrame(function () {
                 callback();
                 ticking = false;
             });
@@ -222,23 +233,26 @@ function optimizedScroll(callback) {
     };
 }
 
-window.addEventListener('scroll', optimizedScroll(() => {
-    scrollActive();
-    reveal();
-}));
+window.addEventListener(
+    'scroll',
+    optimizedScroll(() => {
+        scrollActive();
+        reveal();
+    })
+);
 
 // ===========================
 // Loading Animation
 // ===========================
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
-    
+
     // Animate elements on load
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
         heroContent.style.opacity = '0';
         heroContent.style.transform = 'translateY(30px)';
-        
+
         setTimeout(() => {
             heroContent.style.transition = 'all 0.8s ease';
             heroContent.style.opacity = '1';
@@ -253,7 +267,7 @@ window.addEventListener('load', () => {
 const contactMethods = document.querySelectorAll('.contact-method');
 
 contactMethods.forEach(method => {
-    method.addEventListener('click', (e) => {
+    method.addEventListener('click', e => {
         // Add visual feedback
         method.style.transform = 'scale(0.95)';
         setTimeout(() => {
@@ -267,10 +281,10 @@ contactMethods.forEach(method => {
 // ===========================
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: '0px 0px -100px 0px',
 };
 
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
@@ -290,7 +304,7 @@ if (glitchTitle) {
     glitchTitle.addEventListener('mouseenter', () => {
         glitchTitle.classList.add('glitch-active');
     });
-    
+
     glitchTitle.addEventListener('mouseleave', () => {
         glitchTitle.classList.remove('glitch-active');
     });
@@ -301,16 +315,16 @@ if (glitchTitle) {
 // ===========================
 function createRealisticStarField() {
     const bgAnimation = document.querySelector('.bg-animation');
-    
+
     // Create multiple layers of stars with different sizes and colors
     const starLayers = [
         { count: 60, size: 1, color: 'rgba(255, 255, 255, 0.9)', speed: 0.1, twinkle: 2 },
         { count: 40, size: 1.5, color: 'rgba(255, 255, 255, 0.7)', speed: 0.2, twinkle: 3 },
         { count: 20, size: 2, color: 'rgba(0, 255, 136, 0.6)', speed: 0.3, twinkle: 4 },
         { count: 15, size: 2.5, color: 'rgba(255, 0, 128, 0.5)', speed: 0.4, twinkle: 5 },
-        { count: 10, size: 3, color: 'rgba(178, 102, 255, 0.5)', speed: 0.5, twinkle: 6 }
+        { count: 10, size: 3, color: 'rgba(178, 102, 255, 0.5)', speed: 0.5, twinkle: 6 },
     ];
-    
+
     starLayers.forEach(layer => {
         for (let i = 0; i < layer.count; i++) {
             const star = document.createElement('div');
@@ -340,7 +354,7 @@ createRealisticStarField();
 // ===========================
 function addSubtleHoverEffects() {
     const cards = document.querySelectorAll('.glass-card');
-    
+
     cards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.transition = 'all 0.3s ease';
@@ -355,20 +369,20 @@ addSubtleHoverEffects();
 // ===========================
 function createSubtleBackground() {
     const bgAnimation = document.querySelector('.bg-animation');
-    
+
     function updateGradient() {
         const time = Date.now() * 0.0005;
         const x = Math.sin(time) * 20 + 50;
         const y = Math.cos(time * 0.7) * 20 + 50;
-        
+
         bgAnimation.style.background = `
             radial-gradient(ellipse at ${x}% ${y}%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
-            radial-gradient(ellipse at ${100-x}% ${100-y}%, rgba(0, 255, 136, 0.03) 0%, transparent 50%),
+            radial-gradient(ellipse at ${100 - x}% ${100 - y}%, rgba(0, 255, 136, 0.03) 0%, transparent 50%),
             radial-gradient(ellipse at 50% 50%, rgba(255, 0, 128, 0.02) 0%, transparent 50%),
             linear-gradient(180deg, #000000 0%, #000000 100%)
         `;
     }
-    
+
     setInterval(updateGradient, 2000);
 }
 
@@ -379,11 +393,11 @@ createSubtleBackground();
 // ===========================
 function addRealisticStarParallax() {
     const stars = document.querySelectorAll('.star');
-    
+
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        
-        stars.forEach((star) => {
+
+        stars.forEach(star => {
             const speed = parseFloat(star.getAttribute('data-speed'));
             const rate = scrolled * -speed;
             star.style.transform = `translateY(${rate}px)`;
@@ -412,12 +426,12 @@ function addSubtleCursorEffects() {
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
     `;
     document.body.appendChild(cursor);
-    
-    document.addEventListener('mousemove', (e) => {
+
+    document.addEventListener('mousemove', e => {
         cursor.style.left = e.clientX - 4 + 'px';
         cursor.style.top = e.clientY - 4 + 'px';
     });
-    
+
     // Subtle scale on hover
     const interactiveElements = document.querySelectorAll('a, button, .glass-card');
     interactiveElements.forEach(el => {
@@ -435,8 +449,19 @@ addSubtleCursorEffects();
 // ===========================
 // Console Easter Egg - Refined
 // ===========================
-console.log('%c🚀 Welcome to Renan\'s Portfolio!', 'color: #ffffff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #ffffff;');
-console.log('%c✨ Now featuring spatial dark theme with white stars and colorful accents', 'color: #00ff88; font-size: 14px; text-shadow: 0 0 5px #00ff88;');
-console.log('%c🔗 Interested in the code? Check it out on GitHub: https://github.com/oliveirara', 'color: #b266ff; font-size: 14px; text-shadow: 0 0 5px #b266ff;');
-console.log('%c🤝 Looking for a talented AI Specialist / Data Scientist? Let\'s connect!', 'color: #ff0080; font-size: 14px; text-shadow: 0 0 5px #ff0080;');
-
+console.log(
+    "%c🚀 Welcome to Renan's Portfolio!",
+    'color: #ffffff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #ffffff;'
+);
+console.log(
+    '%c✨ Now featuring spatial dark theme with white stars and colorful accents',
+    'color: #00ff88; font-size: 14px; text-shadow: 0 0 5px #00ff88;'
+);
+console.log(
+    '%c🔗 Interested in the code? Check it out on GitHub: https://github.com/oliveirara',
+    'color: #b266ff; font-size: 14px; text-shadow: 0 0 5px #b266ff;'
+);
+console.log(
+    "%c🤝 Looking for a talented AI Specialist / Data Scientist? Let's connect!",
+    'color: #ff0080; font-size: 14px; text-shadow: 0 0 5px #ff0080;'
+);
