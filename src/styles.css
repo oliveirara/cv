@@ -82,6 +82,12 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    /* Rocket cursor, rotated to point north-west like the default arrow.
+       Hotspot 0 0 sits on the nose. Ignored on touch devices. */
+    cursor:
+        url('data:image/png;base64,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')
+            0 0,
+        auto;
 }
 
 /* ===========================
@@ -308,6 +314,10 @@ body {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
+    /* .glass-effect sets overflow:hidden, which clipped the mobile menu:
+       it sits below the bar (top:70px) and was cut off entirely.
+       The navbar has no border-radius, so nothing needs clipping here. */
+    overflow: visible;
 }
 
 .navbar.scrolled {
@@ -1171,7 +1181,7 @@ body {
     width: 140px;
     height: 140px;
     margin: 0 auto 1.5rem;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 2px solid var(--glass-border);
@@ -1211,13 +1221,13 @@ body {
 
 .education-icon:hover {
     transform: translateY(-5px) scale(1.05);
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.92);
     box-shadow: var(--shadow-glow-green);
     border-color: var(--secondary-color);
 }
 
 .education-icon:hover img {
-    filter: brightness(1.1) drop-shadow(0 0 10px rgba(0, 0, 0, 0.15));
+    filter: brightness(1) drop-shadow(0 1px 3px rgba(0, 0, 0, 0.25));
 }
 
 /* UFES - Blue shadow (azul UFES) */
@@ -1886,7 +1896,24 @@ body {
 /* ===========================
    Responsive Design
    =========================== */
-@media (max-width: 768px) {
+/* The horizontal nav needs ~1190px for its 8 items. Between 900px and that,
+   it is compacted; below 900px it collapses into the hamburger menu. */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.82rem;
+        padding: 0.45rem 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1899,6 +1926,9 @@ body {
         transition: right 0.3s ease;
         border-top: 1px solid var(--glass-border-hover);
         box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+        z-index: 1001;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -1920,7 +1950,9 @@ body {
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
     }
+}
 
+@media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;
     }
