@@ -1,6 +1,6 @@
 # Renan Alves de Oliveira
 
-**Location:** Campinas, São Paulo, Brazil  
+**Location:** Maringá, Paraná, Brazil  
 **Phone:** +55 (44) 99921-7655  
 **Email:** fisica.renan@gmail.com  
 **LinkedIn:** [linkedin.com/in/oliveirara](https://www.linkedin.com/in/oliveirara/)  
@@ -11,31 +11,41 @@
 
 ## Professional Summary
 
-I enjoy solving complex problems, whether analyzing data from the cosmos or simply coding a solution to a problem. My strong foundation in physics and computational modeling has enabled me to transform raw data into value. Currently, I design and develop a multi-agent platform with an easy, user-friendly interface. My expertise ranges from developing robust ETL/ELT data pipelines to deploying fine-tuned LLMs for specific domains.
+I enjoy solving complex problems, whether analyzing data from the cosmos or simply coding a solution to a problem. My strong foundation in physics and computational modeling has enabled me to transform raw data into value. My expertise ranges from developing robust ETL/ELT data pipelines to deploying AI models for specific domains: astrophysics, fitness metrics, LLMs, and geospatial analysis.
 
 ---
 
 ## Work Experience
 
+### AI Developer Specialist
+**BemAgro S.A.** | Ribeirão Preto, SP  
+*March 2026 – Present*
+
+- Develop and support an end-to-end production Python pipeline for geospatial analysis using artificial intelligence.
+- Improved operational reliability and troubleshooting with structured per-step status, timing and peak-memory metrics, persistent logs, distributed tracing, stable exit codes, and structured error handling for production failures.
+- Provision and operate compute across cloud (OCI, Azure, GCP).
+
 ### AI Specialist
 **Turing** | Campinas, SP  
-*May 2025 – Present*
+*May 2025 – January 2026*
 
-- Architecting production multi-agent system on AWS managing 200+ specialized agents and 1K+ API integrations (LangChain, LlamaIndex, n8n, WSO2) with RAG, web search, and third-party services to automate complex backoffice and service optimization workflows at scale.
+- Deployed a scalable multi-tenant API on a Kubernetes cluster on AWS, serving multiple client workloads from a single service.
+- Deployed to production multi-agent systems on AWS managing 200+ specialized agents and 1K+ API integrations (LangChain, LlamaIndex, n8n, WSO2) with RAG, web search, and third-party services to automate complex back-office and service optimization workflows at scale.
+- Created and deployed APIs for Robotic Process Automation for GUI apps and LLMs.
 
 ### AI Specialist
 **Psyche Aerospace** | Campinas, SP  
-*January 2025 – Present*
+*January 2025 – January 2026*
 
-- Developed computer vision pipeline processing multispectral drone and satellite imagery to compute vegetation indices (NDVI among others) for automated crop health assessment and precision recommendations.
+- Developed computer vision pipeline processing multispectral drone and satellite imagery to compute vegetation indices (NDVI, SAVI, EVI, among others) for automated crop health assessment.
 - Built AWS infrastructure (EC2, SageMaker, Bedrock, EKS) to automate web scraping and fine-tuning of Microsoft Phi-4 on large-scale agricultural corpus, creating domain-specific LLM for agribusiness.
-- Implemented high-performance RAG system using GPU-accelerated FAISS (FLAT index) over 3M+ documents, achieving 95-100% recall with low latency for hallucination detection and real-time information retrieval in production.
+- Implemented high-performance RAG system using GPU-accelerated FAISS (FLAT index) over 3 million+ documents, achieving 95-100% recall with low latency for hallucination detection and real-time information retrieval in production.
 
 ### Project Leader
 **Samsung Electronics** | Campinas, SP  
 *September 2023 – December 2024*
 
-- Led end-to-end development of advanced fitness metrics for Samsung Galaxy Watch (VO2max/%VO2max, AT/AnT, HRmax estimations), coordinating cross-functional team to deliver features to millions of active users.
+- Led end-to-end development of advanced fitness metrics for Samsung Galaxy Watch (VO2max/%VO2max, AT/AnT, HRmax estimations), coordinating a 12-person cross-functional team to deliver features to millions of active users.
 - Coordinated sensor data integration (HR, accelerometer, GPS) and algorithm validation with research teams, maintaining technical documentation and achieving on-time delivery rate across product releases.
 
 ### Data Engineer Sr
@@ -44,13 +54,15 @@ I enjoy solving complex problems, whether analyzing data from the cosmos or simp
 
 - Built automated ETL pipelines (using Pandas, PostgreSQL) for processing time-series health metrics (HR, speed, VO2/VCO2), improving model training efficiency and reducing manual preprocessing time.
 - Implemented data quality framework with automated validation and error-handling in CI/CD (GitHub Actions), reducing production data errors and ensuring consistent data integrity across environments.
-- Redesigned data ingestion and storage architecture (MinIO, PostgreSQL) with engineering team, improving data retrieval speed and enabling real-time dashboards in PowerBI.
+- Redesigned data ingestion and storage architecture (MinIO S3-compatible object storage, PostgreSQL) with engineering team, improving data retrieval speed and enabling real-time time-series monitoring dashboards in Grafana and Power BI.
 
 ### Researcher
 **Universidade Federal do Espírito Santo** | Vitória, ES  
 *August 2018 – April 2024*
 
-- Developed and deployed an interactive dashboard (Streamlit, later React/TypeScript) with a structured database for astronomical data visualization, enabling researchers to efficiently analyze complex datasets from a remote server. Accelerated student research through technical mentorship in Python, Unix, and Shell, while optimizing computational workflows with Cython, Numba, and parallelization techniques. Managed HPC cluster operations to ensure optimal uptime and resource allocation for critical scientific computations.
+- Administered the research group's HPC cluster on Enterprise Linux (CentOS), ensuring uptime and resource allocation for critical scientific computations.
+- Developed and deployed an interactive dashboard (Streamlit, later React/TypeScript) backed by a structured database for astronomical data visualization, served from a remote server for distributed collaborators.
+- Mentored students in Python, Unix, and Shell, and optimized computational workflows with Cython, Numba, and parallelization techniques.
 
 ### Researcher Analyst
 **Simons Foundation (Flatiron Institute)** | New York, NY  
@@ -100,19 +112,23 @@ I enjoy solving complex problems, whether analyzing data from the cosmos or simp
 
 ## Technical Skills
 
+**DevOps & Cloud:** AWS, Azure, CI/CD Pipelines, Docker, GitHub Actions, Google Cloud Platform, Infrastructure as Code, Kubernetes, Linux (CentOS/RHEL, Ubuntu), Oracle Cloud Infrastructure, Terraform
+
+**Programming & Testing:** C, Cython, Numba, Python, pytest, R, Shell, TypeScript
+
+**Operations & Observability:** Configuration Management, Distributed Systems, Distributed Tracing, Grafana, Incident Response, Logging, Monitoring, Performance Tuning, Troubleshooting
+
+**Data Engineering:** Data Pipelines, DVC, ETL, MinIO (S3-compatible object storage), MLflow, PostgreSQL, STAC
+
 **AI & Machine Learning:** Agents, LLM Fine-tuning, Multimodal Prompting, ONNX, PyTorch, RAG
 
-**Programming:** C, Cython, Numba, Python, R, TypeScript
+**Satellite & Space Data:** Earth Observation (Sentinel-2, Landsat, Planet), Space Telescopes (Hubble, JWST, Planck), Multispectral Imagery, Remote Sensing, Geospatial Analysis
 
-**Cloud & Infrastructure:** AWS, CI/CD Pipelines, Docker, GitHub Actions
-
-**Data Engineering:** Artifactory, Data Pipelines, DVC, ETL, MinIO, MLflow, pgAdmin, Pinecone, PostgreSQL, Zilliz
-
-**Version Control & Collaboration:** Confluence, Code Review, Git, GitHub, GitLab, Jira
+**Ways of Working:** Agile (Kanban, Scrum/Sprints), Code Review, Confluence, Git, GitHub, GitLab, Jira, Mentoring, Technical Documentation
 
 **Data Analysis:** Bayesian Inference, Meta-Analysis, Monte Carlo Simulation, Statistical Testing
 
-**Visualization & Reporting:** Power BI, Streamlit, React, Scientific Writing, DataViz
+**Visualization & Reporting:** DataViz, Power BI, React, Scientific Writing, Streamlit
 
 **HPC & Optimization:** Code Optimization, High-Performance Computing, Parallel Computing
 
@@ -130,6 +146,6 @@ I enjoy solving complex problems, whether analyzing data from the cosmos or simp
 
 ## Languages & Certifications
 
-**Languages:** Portuguese (Native), English (Full Professional Proficiency)
+**Languages:** Portuguese (Native), English (Full Professional Proficiency), Spanish (Comprehension)
 
 **Certifications:** Data Science (Unicamp)

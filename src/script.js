@@ -51,10 +51,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Typing Animation
 // ===========================
 const textArray = [
+    'Satellite & Geospatial ML Engineer',
+    'Remote Sensing Engineer',
     'AI Specialist',
     'AI Architect',
     'Machine Learning Engineer',
     'MLOps Engineer',
+    'DevOps Engineer',
     'LLM Engineer',
     'Computer Vision Engineer',
     'Data Analyst',
