@@ -51,21 +51,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Typing Animation
 // ===========================
 const textArray = [
-    'Satellite & Geospatial ML Engineer',
-    'Remote Sensing Engineer',
-    'AI Specialist',
-    'AI Architect',
-    'Machine Learning Engineer',
-    'MLOps Engineer',
+    'Physicist',
+    'Cosmologist',
+    'Astrophysicist',
+    'Python Developer',
+    'Research Scientist',
+    'Software Engineer',
     'DevOps Engineer',
-    'LLM Engineer',
-    'Computer Vision Engineer',
-    'Data Analyst',
     'Data Engineer',
     'Data Scientist',
-    'Research Scientist',
-    'Physicist',
-    'Astrophysicist',
+    'Machine Learning Engineer',
+    'Computer Vision Engineer',
+    'Remote Sensing Engineer',
+    'Satellite & Geospatial ML Engineer',
+    'MLOps Engineer',
+    'AI Specialist',
+    'AI Architect',
+    'LLM Engineer',
 ];
 const typingSpeed = 100;
 const erasingSpeed = 50;
